@@ -46,7 +46,7 @@ body{
     position: absolute;
     bottom: 0;
     left: 10%;
-    animation: rocket 6s linear forwards;}
+    animation: rocket 5s linear forwards;}
 #ufo{
     background: url(img/ufo.png) center no-repeat;
     background-size: contain;
@@ -55,7 +55,7 @@ body{
     height: 80px;
     bottom: 20%;
     right: -120px;
-    animation: ufo 8s linear  reverse;
+    animation: ufo 5s linear forwards;
     }
 .ulduzlar{
     width: 100%;
@@ -94,8 +94,8 @@ right: 10%;
     width: 100%;
 }
 @keyframes ufo {
-    from { left: 100% }
-    to { left: -120px }
+    0% { right:   100%; }
+    100% { left:  -180px; display: none; }
 }
 @keyframes rocket {
     0%{top: 0;
