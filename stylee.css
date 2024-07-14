@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url('img/bodyImg.jpg');
+}
+.sun{
+    background: url(img/sun.png) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    width: 200px;
+    height:200px;
+    animation: sun 60s infinite  linear;
+    z-index: 2;
+}
+#yer{
+    background: url(img/earth.png)center no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    animation: yer 20s infinite linear;
+    z-index: 2;
+}
+#ay{
+    background: url(img/moon.jpg)center no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    transform-origin: 50px 50px;
+    z-index: 2;
+    animation: ay 20s infinite linear;
+  
+}
+#rocket{
+    background: url(img/car.png) center no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    animation: rocket 6s linear forwards;}
+#ufo{
+    background: url(img/ufo.png) center no-repeat;
+    background-size: contain;
+    width: 80px;
+    position: absolute;
+    height: 80px;
+    bottom: 20%;
+    right: -120px;
+    animation: ufo 8s linear  reverse;
+    }
+.ulduzlar{
+    width: 100%;
+    height: 100%;
+    animation:ulduzlar 0.3s infinite ;opacity: 1;
+}
+
+.ulduz{
+background: url(img/Untitled-3.png) center no-repeat;
+background-size: contain;
+width: 50px;
+height: 50px;
+position: absolute;
+top: 0;
+right: 10%;
+
+
+}
+
+.hereket1{
+    animation: ulduz 6s linear forwards;
+}
+.hereket2{
+    animation: ulduz2 6s linear forwards;
+}
+.hereket3{
+    animation: ulduz3  6s linear forwards;
+}
+
+.qalaktika{
+  
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+@keyframes ufo {
+    from { left: 100% }
+    to { left: -120px }
+}
+@keyframes rocket {
+    0%{top: 0;
+        left: 10%;}
+    
+        100%{ top: 20%;
+        left:  70%;
+        display: none;}
+        
+}
+@keyframes ulduzlar {
+    0%{
+        opacity: 0.5;
+    }
+    100%{opacity: 1;}
+}
+@keyframes sun {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+    
+}
+@keyframes yer {
+    0%{transform: rotate(0deg)
+        translate(220px ,0)
+    }
+    100%{
+        transform: rotate(360deg)
+        translate(220px ,0);
+    }
+    
+}
+@keyframes ay {
+    0%{transform: rotate(0deg)
+        translate(100px, 70px );}
+    100%{transform: rotate(360deg)
+        translate(100px, 70px);}}
+
+@keyframes ulduz {
+    0%{top: 0;
+    right: 10%;}
+
+    100%{ top: 70%;
+    right: 30%;
+    display: none;}
+    
+}
+@keyframes ulduz2 {
+    0%{top: 0;
+    right: 10%;}
+
+    100%{ top: 20%;
+    right: 70%;
+    display: none;}
+    
+}
+@keyframes ulduz3 {
+    0%{top: 0;
+    right: 10%;}
+
+    100%{ top: 70%;
+    right: 50%;
+    display: none;}
+    
+}
